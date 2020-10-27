@@ -1,0 +1,855 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		81AECDFCD5F7CC22FD08F106 /* Pods_Leaf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB72E10613A5445598912538 /* Pods_Leaf.framework */; };
+		9C36AFED25484D3F0020FBA5 /* OperationMapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C36AFE425484D3F0020FBA5 /* OperationMapPresenter.swift */; };
+		9C36AFEE25484D3F0020FBA5 /* OperationMapContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C36AFE625484D3F0020FBA5 /* OperationMapContract.swift */; };
+		9C36AFEF25484D3F0020FBA5 /* OperationMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C36AFE825484D3F0020FBA5 /* OperationMapViewController.swift */; };
+		9C36AFF025484D3F0020FBA5 /* OperationMapInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C36AFEA25484D3F0020FBA5 /* OperationMapInteractor.swift */; };
+		9C36AFF125484D3F0020FBA5 /* OperationMapRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C36AFEC25484D3F0020FBA5 /* OperationMapRouter.swift */; };
+		9C36AFF425484D490020FBA5 /* OperationMap.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C36AFF325484D490020FBA5 /* OperationMap.storyboard */; };
+		9C36AFF8254855E70020FBA5 /* OperationMapCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C36AFF7254855E70020FBA5 /* OperationMapCell.swift */; };
+		9C92B77D25482BA5007B2FC2 /* Enviroment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C92B77C25482BA5007B2FC2 /* Enviroment.swift */; };
+		9C92B78025482BF8007B2FC2 /* LeafAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C92B77F25482BF8007B2FC2 /* LeafAPI.swift */; };
+		9C92B78525482C57007B2FC2 /* LeafAPIType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C92B78425482C57007B2FC2 /* LeafAPIType.swift */; };
+		9C92B78D25482D10007B2FC2 /* LeafFieldsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C92B78C25482D10007B2FC2 /* LeafFieldsService.swift */; };
+		9C92B79225482D60007B2FC2 /* UserDefaultsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C92B79125482D60007B2FC2 /* UserDefaultsExtension.swift */; };
+		9C92B79625482E98007B2FC2 /* LeafAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C92B79525482E98007B2FC2 /* LeafAuthService.swift */; };
+		9C92B79A25482FBB007B2FC2 /* LeafOperationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C92B79925482FBB007B2FC2 /* LeafOperationService.swift */; };
+		9C92B79E25483178007B2FC2 /* LeafUserManagementService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C92B79D25483178007B2FC2 /* LeafUserManagementService.swift */; };
+		9C92B7A2254831D7007B2FC2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C92B7A1254831D7007B2FC2 /* User.swift */; };
+		9C92B7A5254832C2007B2FC2 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C92B7A4254832C2007B2FC2 /* Token.swift */; };
+		9C92B7A92548332A007B2FC2 /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C92B7A82548332A007B2FC2 /* Field.swift */; };
+		9C92B7AC25483374007B2FC2 /* Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C92B7AB25483374007B2FC2 /* Operation.swift */; };
+		9C92B7B3254833F5007B2FC2 /* YieldVolume.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C92B7AF254833F5007B2FC2 /* YieldVolume.swift */; };
+		9C92B7B4254833F5007B2FC2 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C92B7B0254833F5007B2FC2 /* Property.swift */; };
+		9C92B7B5254833F5007B2FC2 /* Elevation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C92B7B1254833F5007B2FC2 /* Elevation.swift */; };
+		9C92B7B6254833F5007B2FC2 /* OperationFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C92B7B2254833F5007B2FC2 /* OperationFile.swift */; };
+		9C92B7BA25483473007B2FC2 /* OperationImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C92B7B925483473007B2FC2 /* OperationImage.swift */; };
+		9C92B7D52548351F007B2FC2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C92B7CC2548351F007B2FC2 /* LoginViewController.swift */; };
+		9C92B7D62548351F007B2FC2 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C92B7CE2548351F007B2FC2 /* LoginInteractor.swift */; };
+		9C92B7D72548351F007B2FC2 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C92B7D02548351F007B2FC2 /* LoginRouter.swift */; };
+		9C92B7D82548351F007B2FC2 /* LoginContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C92B7D22548351F007B2FC2 /* LoginContract.swift */; };
+		9C92B7D92548351F007B2FC2 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C92B7D42548351F007B2FC2 /* LoginPresenter.swift */; };
+		9C92B7DC2548352B007B2FC2 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C92B7DB2548352B007B2FC2 /* Login.storyboard */; };
+		9C92B7E025483624007B2FC2 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C92B7DF25483624007B2FC2 /* BaseViewController.swift */; };
+		9C92B7E425483979007B2FC2 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C92B7E325483979007B2FC2 /* UIViewExtensions.swift */; };
+		9C92B7E725483C01007B2FC2 /* BaseViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C92B7E625483C01007B2FC2 /* BaseViewProtocol.swift */; };
+		9C92B800254840EA007B2FC2 /* FieldListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C92B7F7254840E9007B2FC2 /* FieldListInteractor.swift */; };
+		9C92B801254840EA007B2FC2 /* FieldListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C92B7F9254840EA007B2FC2 /* FieldListRouter.swift */; };
+		9C92B802254840EA007B2FC2 /* FieldListContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C92B7FB254840EA007B2FC2 /* FieldListContract.swift */; };
+		9C92B803254840EA007B2FC2 /* FieldListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C92B7FD254840EA007B2FC2 /* FieldListPresenter.swift */; };
+		9C92B804254840EA007B2FC2 /* FieldListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C92B7FF254840EA007B2FC2 /* FieldListViewController.swift */; };
+		9C92B807254840F4007B2FC2 /* FieldList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C92B806254840F4007B2FC2 /* FieldList.storyboard */; };
+		9C92B80B25484280007B2FC2 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C92B80A25484280007B2FC2 /* UIViewControllerExtension.swift */; };
+		9C92B824254847FE007B2FC2 /* OperationListContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C92B81B254847FE007B2FC2 /* OperationListContract.swift */; };
+		9C92B825254847FE007B2FC2 /* OperationListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C92B81D254847FE007B2FC2 /* OperationListInteractor.swift */; };
+		9C92B826254847FE007B2FC2 /* OperationListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C92B81F254847FE007B2FC2 /* OperationListRouter.swift */; };
+		9C92B827254847FE007B2FC2 /* OperationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C92B821254847FE007B2FC2 /* OperationListViewController.swift */; };
+		9C92B828254847FE007B2FC2 /* OperationListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C92B823254847FE007B2FC2 /* OperationListPresenter.swift */; };
+		9C92B82B25484807007B2FC2 /* OperationList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C92B82A25484807007B2FC2 /* OperationList.storyboard */; };
+		9CB151A525446C8F00578DE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB151A425446C8F00578DE5 /* AppDelegate.swift */; };
+		9CB151A725446C8F00578DE5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB151A625446C8F00578DE5 /* SceneDelegate.swift */; };
+		9CB151AE25446C9100578DE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CB151AD25446C9100578DE5 /* Assets.xcassets */; };
+		9CB151B125446C9100578DE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CB151AF25446C9100578DE5 /* LaunchScreen.storyboard */; };
+		9CE02080254750D70011A0F6 /* GeoJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE0207E254750D70011A0F6 /* GeoJson.swift */; };
+		9CE02081254750D70011A0F6 /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE0207F254750D70011A0F6 /* Geometry.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		23714F7F32B665CDEE723680 /* Pods-Leaf.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Leaf.debug.xcconfig"; path = "Target Support Files/Pods-Leaf/Pods-Leaf.debug.xcconfig"; sourceTree = "<group>"; };
+		77154A312323B792121274C4 /* Pods-Leaf.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Leaf.release.xcconfig"; path = "Target Support Files/Pods-Leaf/Pods-Leaf.release.xcconfig"; sourceTree = "<group>"; };
+		9C36AFE425484D3F0020FBA5 /* OperationMapPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationMapPresenter.swift; sourceTree = "<group>"; };
+		9C36AFE625484D3F0020FBA5 /* OperationMapContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationMapContract.swift; sourceTree = "<group>"; };
+		9C36AFE825484D3F0020FBA5 /* OperationMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationMapViewController.swift; sourceTree = "<group>"; };
+		9C36AFEA25484D3F0020FBA5 /* OperationMapInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationMapInteractor.swift; sourceTree = "<group>"; };
+		9C36AFEC25484D3F0020FBA5 /* OperationMapRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationMapRouter.swift; sourceTree = "<group>"; };
+		9C36AFF325484D490020FBA5 /* OperationMap.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OperationMap.storyboard; sourceTree = "<group>"; };
+		9C36AFF7254855E70020FBA5 /* OperationMapCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationMapCell.swift; sourceTree = "<group>"; };
+		9C92B77C25482BA5007B2FC2 /* Enviroment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enviroment.swift; sourceTree = "<group>"; };
+		9C92B77F25482BF8007B2FC2 /* LeafAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeafAPI.swift; sourceTree = "<group>"; };
+		9C92B78425482C57007B2FC2 /* LeafAPIType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeafAPIType.swift; sourceTree = "<group>"; };
+		9C92B78C25482D10007B2FC2 /* LeafFieldsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeafFieldsService.swift; sourceTree = "<group>"; };
+		9C92B79125482D60007B2FC2 /* UserDefaultsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsExtension.swift; sourceTree = "<group>"; };
+		9C92B79525482E98007B2FC2 /* LeafAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeafAuthService.swift; sourceTree = "<group>"; };
+		9C92B79925482FBB007B2FC2 /* LeafOperationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeafOperationService.swift; sourceTree = "<group>"; };
+		9C92B79D25483178007B2FC2 /* LeafUserManagementService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeafUserManagementService.swift; sourceTree = "<group>"; };
+		9C92B7A1254831D7007B2FC2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		9C92B7A4254832C2007B2FC2 /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		9C92B7A82548332A007B2FC2 /* Field.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Field.swift; sourceTree = "<group>"; };
+		9C92B7AB25483374007B2FC2 /* Operation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operation.swift; sourceTree = "<group>"; };
+		9C92B7AF254833F5007B2FC2 /* YieldVolume.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YieldVolume.swift; sourceTree = "<group>"; };
+		9C92B7B0254833F5007B2FC2 /* Property.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
+		9C92B7B1254833F5007B2FC2 /* Elevation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Elevation.swift; sourceTree = "<group>"; };
+		9C92B7B2254833F5007B2FC2 /* OperationFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationFile.swift; sourceTree = "<group>"; };
+		9C92B7B925483473007B2FC2 /* OperationImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationImage.swift; sourceTree = "<group>"; };
+		9C92B7CC2548351F007B2FC2 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		9C92B7CE2548351F007B2FC2 /* LoginInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		9C92B7D02548351F007B2FC2 /* LoginRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		9C92B7D22548351F007B2FC2 /* LoginContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginContract.swift; sourceTree = "<group>"; };
+		9C92B7D42548351F007B2FC2 /* LoginPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		9C92B7DB2548352B007B2FC2 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		9C92B7DF25483624007B2FC2 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		9C92B7E325483979007B2FC2 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		9C92B7E625483C01007B2FC2 /* BaseViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewProtocol.swift; sourceTree = "<group>"; };
+		9C92B7F7254840E9007B2FC2 /* FieldListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldListInteractor.swift; sourceTree = "<group>"; };
+		9C92B7F9254840EA007B2FC2 /* FieldListRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldListRouter.swift; sourceTree = "<group>"; };
+		9C92B7FB254840EA007B2FC2 /* FieldListContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldListContract.swift; sourceTree = "<group>"; };
+		9C92B7FD254840EA007B2FC2 /* FieldListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldListPresenter.swift; sourceTree = "<group>"; };
+		9C92B7FF254840EA007B2FC2 /* FieldListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldListViewController.swift; sourceTree = "<group>"; };
+		9C92B806254840F4007B2FC2 /* FieldList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FieldList.storyboard; sourceTree = "<group>"; };
+		9C92B80A25484280007B2FC2 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		9C92B81B254847FE007B2FC2 /* OperationListContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationListContract.swift; sourceTree = "<group>"; };
+		9C92B81D254847FE007B2FC2 /* OperationListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationListInteractor.swift; sourceTree = "<group>"; };
+		9C92B81F254847FE007B2FC2 /* OperationListRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationListRouter.swift; sourceTree = "<group>"; };
+		9C92B821254847FE007B2FC2 /* OperationListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationListViewController.swift; sourceTree = "<group>"; };
+		9C92B823254847FE007B2FC2 /* OperationListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationListPresenter.swift; sourceTree = "<group>"; };
+		9C92B82A25484807007B2FC2 /* OperationList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OperationList.storyboard; sourceTree = "<group>"; };
+		9CB151A125446C8F00578DE5 /* Leaf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Leaf.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CB151A425446C8F00578DE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9CB151A625446C8F00578DE5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9CB151AD25446C9100578DE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9CB151B025446C9100578DE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9CB151B225446C9100578DE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CE0207E254750D70011A0F6 /* GeoJson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoJson.swift; sourceTree = "<group>"; };
+		9CE0207F254750D70011A0F6 /* Geometry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Geometry.swift; sourceTree = "<group>"; };
+		FB72E10613A5445598912538 /* Pods_Leaf.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Leaf.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9CB1519E25446C8E00578DE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81AECDFCD5F7CC22FD08F106 /* Pods_Leaf.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		98867F617CA80BC2170EB94F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				23714F7F32B665CDEE723680 /* Pods-Leaf.debug.xcconfig */,
+				77154A312323B792121274C4 /* Pods-Leaf.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9C36AFE325484D3F0020FBA5 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				9C36AFE425484D3F0020FBA5 /* OperationMapPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		9C36AFE525484D3F0020FBA5 /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				9C36AFE625484D3F0020FBA5 /* OperationMapContract.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		9C36AFE725484D3F0020FBA5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9C36AFF325484D490020FBA5 /* OperationMap.storyboard */,
+				9C36AFE825484D3F0020FBA5 /* OperationMapViewController.swift */,
+				9C36AFF7254855E70020FBA5 /* OperationMapCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9C36AFE925484D3F0020FBA5 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				9C36AFEA25484D3F0020FBA5 /* OperationMapInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		9C36AFEB25484D3F0020FBA5 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				9C36AFEC25484D3F0020FBA5 /* OperationMapRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		9C92B76D25482B02007B2FC2 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				9C92B77F25482BF8007B2FC2 /* LeafAPI.swift */,
+				9C92B78425482C57007B2FC2 /* LeafAPIType.swift */,
+				9C92B78725482CAF007B2FC2 /* Services */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		9C92B78725482CAF007B2FC2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9C92B79525482E98007B2FC2 /* LeafAuthService.swift */,
+				9C92B79D25483178007B2FC2 /* LeafUserManagementService.swift */,
+				9C92B78C25482D10007B2FC2 /* LeafFieldsService.swift */,
+				9C92B79925482FBB007B2FC2 /* LeafOperationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		9C92B79025482D48007B2FC2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9C92B79125482D60007B2FC2 /* UserDefaultsExtension.swift */,
+				9C92B7E325483979007B2FC2 /* UIViewExtensions.swift */,
+				9C92B80A25484280007B2FC2 /* UIViewControllerExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9C92B7BD254834AA007B2FC2 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				9C92B7CA25483516007B2FC2 /* Login */,
+				9C92B7E9254840C2007B2FC2 /* FieldList */,
+				9C92B80D254847D9007B2FC2 /* OperationList */,
+				9C92B82E25484C80007B2FC2 /* OperationMap */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		9C92B7CA25483516007B2FC2 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				9C92B7D12548351F007B2FC2 /* Contract */,
+				9C92B7CD2548351F007B2FC2 /* Interactor */,
+				9C92B7D32548351F007B2FC2 /* Presenter */,
+				9C92B7CF2548351F007B2FC2 /* Router */,
+				9C92B7CB2548351F007B2FC2 /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		9C92B7CB2548351F007B2FC2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9C92B7DB2548352B007B2FC2 /* Login.storyboard */,
+				9C92B7CC2548351F007B2FC2 /* LoginViewController.swift */,
+			);
+			name = View;
+			path = Leaf/Modules/View;
+			sourceTree = SOURCE_ROOT;
+		};
+		9C92B7CD2548351F007B2FC2 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				9C92B7CE2548351F007B2FC2 /* LoginInteractor.swift */,
+			);
+			name = Interactor;
+			path = Leaf/Modules/Interactor;
+			sourceTree = SOURCE_ROOT;
+		};
+		9C92B7CF2548351F007B2FC2 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				9C92B7D02548351F007B2FC2 /* LoginRouter.swift */,
+			);
+			name = Router;
+			path = Leaf/Modules/Router;
+			sourceTree = SOURCE_ROOT;
+		};
+		9C92B7D12548351F007B2FC2 /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				9C92B7D22548351F007B2FC2 /* LoginContract.swift */,
+			);
+			name = Contract;
+			path = Leaf/Modules/Contract;
+			sourceTree = SOURCE_ROOT;
+		};
+		9C92B7D32548351F007B2FC2 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				9C92B7D42548351F007B2FC2 /* LoginPresenter.swift */,
+			);
+			name = Presenter;
+			path = Leaf/Modules/Presenter;
+			sourceTree = SOURCE_ROOT;
+		};
+		9C92B7DE2548360A007B2FC2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9C92B7DF25483624007B2FC2 /* BaseViewController.swift */,
+				9C92B7E625483C01007B2FC2 /* BaseViewProtocol.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		9C92B7E9254840C2007B2FC2 /* FieldList */ = {
+			isa = PBXGroup;
+			children = (
+				9C92B7FA254840EA007B2FC2 /* Contract */,
+				9C92B7F6254840E9007B2FC2 /* Interactor */,
+				9C92B7FC254840EA007B2FC2 /* Presenter */,
+				9C92B7F8254840EA007B2FC2 /* Router */,
+				9C92B7FE254840EA007B2FC2 /* View */,
+			);
+			path = FieldList;
+			sourceTree = "<group>";
+		};
+		9C92B7F6254840E9007B2FC2 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				9C92B7F7254840E9007B2FC2 /* FieldListInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		9C92B7F8254840EA007B2FC2 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				9C92B7F9254840EA007B2FC2 /* FieldListRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		9C92B7FA254840EA007B2FC2 /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				9C92B7FB254840EA007B2FC2 /* FieldListContract.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		9C92B7FC254840EA007B2FC2 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				9C92B7FD254840EA007B2FC2 /* FieldListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		9C92B7FE254840EA007B2FC2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9C92B806254840F4007B2FC2 /* FieldList.storyboard */,
+				9C92B7FF254840EA007B2FC2 /* FieldListViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9C92B80D254847D9007B2FC2 /* OperationList */ = {
+			isa = PBXGroup;
+			children = (
+				9C92B81A254847FE007B2FC2 /* Contract */,
+				9C92B81C254847FE007B2FC2 /* Interactor */,
+				9C92B822254847FE007B2FC2 /* Presenter */,
+				9C92B81E254847FE007B2FC2 /* Router */,
+				9C92B820254847FE007B2FC2 /* View */,
+			);
+			path = OperationList;
+			sourceTree = "<group>";
+		};
+		9C92B81A254847FE007B2FC2 /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				9C92B81B254847FE007B2FC2 /* OperationListContract.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		9C92B81C254847FE007B2FC2 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				9C92B81D254847FE007B2FC2 /* OperationListInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		9C92B81E254847FE007B2FC2 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				9C92B81F254847FE007B2FC2 /* OperationListRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		9C92B820254847FE007B2FC2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9C92B82A25484807007B2FC2 /* OperationList.storyboard */,
+				9C92B821254847FE007B2FC2 /* OperationListViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9C92B822254847FE007B2FC2 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				9C92B823254847FE007B2FC2 /* OperationListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		9C92B82E25484C80007B2FC2 /* OperationMap */ = {
+			isa = PBXGroup;
+			children = (
+				9C36AFE525484D3F0020FBA5 /* Contract */,
+				9C36AFE925484D3F0020FBA5 /* Interactor */,
+				9C36AFE325484D3F0020FBA5 /* Presenter */,
+				9C36AFEB25484D3F0020FBA5 /* Router */,
+				9C36AFE725484D3F0020FBA5 /* View */,
+			);
+			path = OperationMap;
+			sourceTree = "<group>";
+		};
+		9CB1519825446C8E00578DE5 = {
+			isa = PBXGroup;
+			children = (
+				9CB151A325446C8F00578DE5 /* Leaf */,
+				9CB151A225446C8F00578DE5 /* Products */,
+				98867F617CA80BC2170EB94F /* Pods */,
+				BE91DF3DFCD23A5EE016E5B1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9CB151A225446C8F00578DE5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9CB151A125446C8F00578DE5 /* Leaf.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9CB151A325446C8F00578DE5 /* Leaf */ = {
+			isa = PBXGroup;
+			children = (
+				9CB151A425446C8F00578DE5 /* AppDelegate.swift */,
+				9CB151A625446C8F00578DE5 /* SceneDelegate.swift */,
+				9C92B77C25482BA5007B2FC2 /* Enviroment.swift */,
+				9C92B76D25482B02007B2FC2 /* API */,
+				9CE0207D254750C70011A0F6 /* Models */,
+				9C92B7DE2548360A007B2FC2 /* Utils */,
+				9C92B79025482D48007B2FC2 /* Extensions */,
+				9C92B7BD254834AA007B2FC2 /* Modules */,
+				9CB151AD25446C9100578DE5 /* Assets.xcassets */,
+				9CB151AF25446C9100578DE5 /* LaunchScreen.storyboard */,
+				9CB151B225446C9100578DE5 /* Info.plist */,
+			);
+			path = Leaf;
+			sourceTree = "<group>";
+		};
+		9CE0207D254750C70011A0F6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9C92B7A4254832C2007B2FC2 /* Token.swift */,
+				9C92B7A1254831D7007B2FC2 /* User.swift */,
+				9C92B7A82548332A007B2FC2 /* Field.swift */,
+				9CE0207F254750D70011A0F6 /* Geometry.swift */,
+				9C92B7AB25483374007B2FC2 /* Operation.swift */,
+				9C92B7B1254833F5007B2FC2 /* Elevation.swift */,
+				9C92B7B2254833F5007B2FC2 /* OperationFile.swift */,
+				9C92B7B0254833F5007B2FC2 /* Property.swift */,
+				9C92B7AF254833F5007B2FC2 /* YieldVolume.swift */,
+				9C92B7B925483473007B2FC2 /* OperationImage.swift */,
+				9CE0207E254750D70011A0F6 /* GeoJson.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BE91DF3DFCD23A5EE016E5B1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FB72E10613A5445598912538 /* Pods_Leaf.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9CB151A025446C8E00578DE5 /* Leaf */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CB151B525446C9100578DE5 /* Build configuration list for PBXNativeTarget "Leaf" */;
+			buildPhases = (
+				3B0CFEF1944A5CBD051E59B1 /* [CP] Check Pods Manifest.lock */,
+				9CB1519D25446C8E00578DE5 /* Sources */,
+				9CB1519E25446C8E00578DE5 /* Frameworks */,
+				9CB1519F25446C8E00578DE5 /* Resources */,
+				46068090FF29F9100DDE9A05 /* [CP] Copy Pods Resources */,
+				399E30F70A20B7BD2C380EC7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Leaf;
+			productName = Leaf;
+			productReference = 9CB151A125446C8F00578DE5 /* Leaf.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9CB1519925446C8E00578DE5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					9CB151A025446C8E00578DE5 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+				};
+			};
+			buildConfigurationList = 9CB1519C25446C8E00578DE5 /* Build configuration list for PBXProject "Leaf" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9CB1519825446C8E00578DE5;
+			productRefGroup = 9CB151A225446C8F00578DE5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9CB151A025446C8E00578DE5 /* Leaf */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9CB1519F25446C8E00578DE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CB151B125446C9100578DE5 /* LaunchScreen.storyboard in Resources */,
+				9CB151AE25446C9100578DE5 /* Assets.xcassets in Resources */,
+				9C92B7DC2548352B007B2FC2 /* Login.storyboard in Resources */,
+				9C36AFF425484D490020FBA5 /* OperationMap.storyboard in Resources */,
+				9C92B807254840F4007B2FC2 /* FieldList.storyboard in Resources */,
+				9C92B82B25484807007B2FC2 /* OperationList.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		399E30F70A20B7BD2C380EC7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Leaf/Pods-Leaf-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Leaf/Pods-Leaf-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Leaf/Pods-Leaf-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3B0CFEF1944A5CBD051E59B1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Leaf-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		46068090FF29F9100DDE9A05 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Leaf/Pods-Leaf-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Leaf/Pods-Leaf-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Leaf/Pods-Leaf-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9CB1519D25446C8E00578DE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C92B79225482D60007B2FC2 /* UserDefaultsExtension.swift in Sources */,
+				9C92B78525482C57007B2FC2 /* LeafAPIType.swift in Sources */,
+				9C92B7B4254833F5007B2FC2 /* Property.swift in Sources */,
+				9C92B7D72548351F007B2FC2 /* LoginRouter.swift in Sources */,
+				9C92B7D52548351F007B2FC2 /* LoginViewController.swift in Sources */,
+				9C92B7E025483624007B2FC2 /* BaseViewController.swift in Sources */,
+				9C92B828254847FE007B2FC2 /* OperationListPresenter.swift in Sources */,
+				9C92B79A25482FBB007B2FC2 /* LeafOperationService.swift in Sources */,
+				9C92B78D25482D10007B2FC2 /* LeafFieldsService.swift in Sources */,
+				9C92B827254847FE007B2FC2 /* OperationListViewController.swift in Sources */,
+				9C92B77D25482BA5007B2FC2 /* Enviroment.swift in Sources */,
+				9C36AFED25484D3F0020FBA5 /* OperationMapPresenter.swift in Sources */,
+				9C36AFF125484D3F0020FBA5 /* OperationMapRouter.swift in Sources */,
+				9C92B7A5254832C2007B2FC2 /* Token.swift in Sources */,
+				9C92B7A2254831D7007B2FC2 /* User.swift in Sources */,
+				9C92B804254840EA007B2FC2 /* FieldListViewController.swift in Sources */,
+				9C92B7B5254833F5007B2FC2 /* Elevation.swift in Sources */,
+				9C92B825254847FE007B2FC2 /* OperationListInteractor.swift in Sources */,
+				9C36AFEF25484D3F0020FBA5 /* OperationMapViewController.swift in Sources */,
+				9C92B7D92548351F007B2FC2 /* LoginPresenter.swift in Sources */,
+				9CE02080254750D70011A0F6 /* GeoJson.swift in Sources */,
+				9C92B7BA25483473007B2FC2 /* OperationImage.swift in Sources */,
+				9C92B79625482E98007B2FC2 /* LeafAuthService.swift in Sources */,
+				9C92B801254840EA007B2FC2 /* FieldListRouter.swift in Sources */,
+				9C92B7D82548351F007B2FC2 /* LoginContract.swift in Sources */,
+				9C92B80B25484280007B2FC2 /* UIViewControllerExtension.swift in Sources */,
+				9C92B803254840EA007B2FC2 /* FieldListPresenter.swift in Sources */,
+				9C92B800254840EA007B2FC2 /* FieldListInteractor.swift in Sources */,
+				9C36AFF8254855E70020FBA5 /* OperationMapCell.swift in Sources */,
+				9C92B7A92548332A007B2FC2 /* Field.swift in Sources */,
+				9CB151A525446C8F00578DE5 /* AppDelegate.swift in Sources */,
+				9CB151A725446C8F00578DE5 /* SceneDelegate.swift in Sources */,
+				9C92B7AC25483374007B2FC2 /* Operation.swift in Sources */,
+				9C92B826254847FE007B2FC2 /* OperationListRouter.swift in Sources */,
+				9C92B7E425483979007B2FC2 /* UIViewExtensions.swift in Sources */,
+				9C92B824254847FE007B2FC2 /* OperationListContract.swift in Sources */,
+				9C92B7E725483C01007B2FC2 /* BaseViewProtocol.swift in Sources */,
+				9C92B79E25483178007B2FC2 /* LeafUserManagementService.swift in Sources */,
+				9C92B802254840EA007B2FC2 /* FieldListContract.swift in Sources */,
+				9CE02081254750D70011A0F6 /* Geometry.swift in Sources */,
+				9C92B7D62548351F007B2FC2 /* LoginInteractor.swift in Sources */,
+				9C36AFEE25484D3F0020FBA5 /* OperationMapContract.swift in Sources */,
+				9C92B78025482BF8007B2FC2 /* LeafAPI.swift in Sources */,
+				9C92B7B3254833F5007B2FC2 /* YieldVolume.swift in Sources */,
+				9C92B7B6254833F5007B2FC2 /* OperationFile.swift in Sources */,
+				9C36AFF025484D3F0020FBA5 /* OperationMapInteractor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9CB151AF25446C9100578DE5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9CB151B025446C9100578DE5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9CB151B325446C9100578DE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9CB151B425446C9100578DE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9CB151B625446C9100578DE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23714F7F32B665CDEE723680 /* Pods-Leaf.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HQKT5G7NHC;
+				INFOPLIST_FILE = Leaf/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nam.Leaf;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9CB151B725446C9100578DE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77154A312323B792121274C4 /* Pods-Leaf.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HQKT5G7NHC;
+				INFOPLIST_FILE = Leaf/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nam.Leaf;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9CB1519C25446C8E00578DE5 /* Build configuration list for PBXProject "Leaf" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CB151B325446C9100578DE5 /* Debug */,
+				9CB151B425446C9100578DE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CB151B525446C9100578DE5 /* Build configuration list for PBXNativeTarget "Leaf" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CB151B625446C9100578DE5 /* Debug */,
+				9CB151B725446C9100578DE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9CB1519925446C8E00578DE5 /* Project object */;
+}
